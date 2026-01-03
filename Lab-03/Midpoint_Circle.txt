@@ -1,0 +1,15 @@
+The Midpoint Circle Algorithm is a classic
+scan-conversion strategy used to determine the closest
+pixel positions to a perfect circle. Instead of 
+using complex trigonometry or square roots—which are computationally "expensive"—it 
+relies entirely on integer arithmetic to maintain high performance.
+
+The algorithm works by calculating only a single 45° arc (one octant). 
+Since a circle is perfectly symmetrical, 
+those calculated coordinates are reflected across 
+the axes to fill in the other seven octants simultaneously.
+
+At each step, the algorithm evaluates a "decision parameter" 
+to see if the true mathematical circle is closer to the current horizontal pixel or 
+the next diagonal pixel. By choosing the one with the least error, 
+it creates a smooth, continuous curve using only simple addition and subtraction.
