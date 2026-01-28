@@ -1,0 +1,11 @@
+The midpoint ellipse algorithm draws an ellipse
+efficiently by using the ellipse equation and incremental 
+decision parameters instead of floating-point calculations. 
+It works by exploiting symmetry to plot four points at a time and 
+divides the drawing process into two regions based on the slope 
+of the ellipse: Region 1 where the slope is greater than −1 and Region 2 
+where it is less than or equal to −1. Starting from the top of 
+the ellipse, the algorithm updates decision parameters to 
+choose the next pixel in either the horizontal or diagonal direction, 
+continuing until the entire ellipse is drawn smoothly and accurately 
+using only integer arithmetic with graphics.h.
