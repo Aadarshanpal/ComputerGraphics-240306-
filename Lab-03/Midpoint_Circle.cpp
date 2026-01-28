@@ -1,4 +1,4 @@
-#include <dos.h>
+
 #include <stdio.h>
 #include <conio.h>
 #include <graphics.h>
@@ -7,12 +7,12 @@
 void draw_circle(int, int, int);
 void symmetry(int, int, int, int);
 
-void main() {
+int main() {
     int xc, yc, R;
     int gd = DETECT, gm;
 
     // Initialize graphics mode
-    initgraph(&gd, &gm, "C:\\TurboC3\\BGI");
+    initgraph(&gd, &gm, "");
 
     printf("Enter the center of the circle:\n");
     printf("Xc = ");
@@ -26,6 +26,7 @@ void main() {
 
     getch();
     closegraph();
+    return 0;
 }
 
 void draw_circle(int xc, int yc, int rad) {
