@@ -1,0 +1,6 @@
+Translation in computer graphics is a geometric transformation that moves an object from one position to another 
+without changing its shape, size, or orientation. 
+It is performed by adding fixed values tx and ty to the original coordinates 
+of every point of the object, effectively shifting it along the x-axis and y-axis. 
+Using homogeneous coordinates, translation can be represented compactly with a transformation matrix, 
+making it easy to combine with other transformations like rotation and scaling in a graphics pipeline.
